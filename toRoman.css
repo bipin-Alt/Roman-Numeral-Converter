@@ -1,0 +1,106 @@
+:root{
+    --text-color:#ccd5ae;
+    --background:#023047;
+    --btncolor:#83c5be;
+    --btnhover:#006d77;
+    --logocolor:#ffe6a7;
+    --spacing : 0.4rem;
+    
+  
+  }
+  
+  ::after
+  ::before{
+    box-sizing : border-box;
+    margin:0;
+    padding:0;
+  }
+  body{
+    background-color:var(--background);
+    color: var(--text-color);
+    font-family: sans-serif;
+    }
+    main{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+    }
+  
+    /*styling the logo*/
+    .logo-alt{
+      text-align:center;
+      letter-spacing:0.2rem;
+     
+    }
+    .logo{
+      width:100vw;
+      height:auto;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+    .underline{
+      width:5rem;
+      height:.2rem;
+      background-color: #b5e2fa;
+    
+    }
+  
+  
+    /*styling the text of converter*/
+    h1{
+      letter-spacing:var(--spacing);
+      text-align:center;
+  }
+  .form{
+   margin:auto 1.5rem;
+   padding:0.93rem auto;
+   text-align:center;
+   width:90%;
+   max-width:40rem;
+  }
+    #convert-btn{
+      margin-top:1.5rem;
+      border:none;
+      height:1.7rem;
+      font-size:1rem;
+      color:240046;
+      letter-spacing:.1rem;
+      background: var(--btncolor);
+      transition :background-color .4s ease-in-out;
+      cursor:pointer;
+    }
+    #convert-btn:hover{
+      background: var(--btnhover);
+    }
+    #number{
+      height:2rem;
+      width:100%;
+      border:2px solid #333;
+    }
+    label{
+      font-size:1.5rem;
+    }
+  .output{
+    color : var(--text-color);
+    background: var(--backgroundcolor);
+    border: 3px solid gray;
+    font-size:1.2rem;
+    margin-top:1.3rem;
+    width:90%;
+    max-width:31rem;
+    min-height:3.5rem;
+    overflow-wrap:break-word;
+    text-align:center;
+  }
+  .alert{
+    text-align:center;
+  font-size:1.2rem;
+    color: crimson;
+    background: var(--background);
+    border: 2px solid red;
+  }
+  .hidden{
+    display:none;
+  }
